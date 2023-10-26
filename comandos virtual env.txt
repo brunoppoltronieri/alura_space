@@ -50,4 +50,48 @@ Alterar a linha 26 por: SECRET_KEY = str(os.getenv('SECRET_KEY'))
 Criar arquivo .env no diretório principal e colar a secret key lá sem aspas. Ex: SECRET_KEY = django-insecure-qb-z75pvf(wx)r(53a8#*82m#563occp^1(s$kleuh=l-ge6ld
 
 
+###############
+Comandos Github
+###############
 
+Iniciar repositório local:
+
+git init
+
+Criar adição:
+
+git add .
+
+Criar commit:
+
+git commit -m "projeto alura space"
+
+Para apontar para projeto criado na página do github:
+
+git remote add origin https://github.com/brunoppoltronieri/alura_space.git
+
+Enviara todo o código para o Github
+
+git push origin master
+
+
+#############
+Pyhton Manage
+#############
+
+Lista de comandos:
+
+python manage.py help
+
+
+############
+Apps
+############
+
+Criar app
+
+python manage.py startapp galeria
+
+Reunir todos os arquivos estaticos:
+
+python manage.py collect static
