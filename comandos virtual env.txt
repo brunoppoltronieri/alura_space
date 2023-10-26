@@ -1,0 +1,53 @@
+############################
+Comandos de Ambiente Vitural
+############################
+
+No CMD:
+
+pip install vitualenv
+
+Criar um ambiente vitual:
+
+python -m virtualenv venv
+
+Para ativar a venv:
+
+venv/Scripts/Activate
+
+Para instalar o Django(com a venv ativa):
+
+pip instal django
+
+Comando para ver as dependencias que estão instaladas:
+
+pip freeze
+
+Comando para criar arquivo de dependencias:
+
+pip freeze > requirements.txt
+
+##################
+Comandos do Django
+##################
+
+Ver todos os comandos do Django:
+
+django-admin help
+
+Iniciar projeto Django:
+
+django-admin starproject setup .
+
+Inicializar servidor:
+
+python manage.py runserver
+
+Instalar dotenv para esconder a secret key que existe no arquivo settings
+
+pip install python-dotenv 
+
+Alterar a linha 26 por: SECRET_KEY = str(os.getenv('SECRET_KEY'))
+Criar arquivo .env no diretório principal e colar a secret key lá sem aspas. Ex: SECRET_KEY = django-insecure-qb-z75pvf(wx)r(53a8#*82m#563occp^1(s$kleuh=l-ge6ld
+
+
+
